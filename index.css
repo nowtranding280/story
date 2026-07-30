@@ -1,0 +1,192 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body{
+    min-height:100vh;
+    overflow:hidden;
+
+    background:linear-gradient(-45deg,
+    #071739,
+    #0B2C68,
+    #1956C5,
+    #3F8CFF);
+
+    background-size:400% 400%;
+    animation:gradient 15s ease infinite;
+
+    color:white;
+}
+
+/* Background Animation */
+
+@keyframes gradient{
+
+0%{
+background-position:0% 50%;
+}
+
+50%{
+background-position:100% 50%;
+}
+
+100%{
+background-position:0% 50%;
+}
+
+}
+
+/* Header */
+
+header{
+
+    width:100%;
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    padding:30px 70px;
+
+}
+
+.logo{
+
+    font-size:34px;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+    text-shadow:0 0 15px rgba(255,255,255,.4);
+
+}
+
+/* Hero Section */
+
+.hero{
+
+    height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:20px;
+
+}
+
+.hero h1{
+
+    font-size:70px;
+
+    margin-bottom:25px;
+
+    text-shadow:0 0 20px #55b8ff;
+
+}
+
+.description{
+
+    width:65%;
+
+    font-size:22px;
+
+    line-height:1.8;
+
+    margin-bottom:40px;
+
+    color:#eef7ff;
+
+}
+
+/* Button */
+
+.btn{
+
+    text-decoration:none;
+
+    color:white;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+    padding:18px 50px;
+
+    border-radius:50px;
+
+    background:linear-gradient(45deg,#00C6FF,#0072FF);
+
+    box-shadow:0 0 30px rgba(0,183,255,.45);
+
+    transition:.4s;
+
+}
+
+.btn:hover{
+
+    transform:translateY(-5px) scale(1.05);
+
+    box-shadow:0 0 40px rgba(0,183,255,.9);
+
+}
+
+/* Quote */
+
+.quote{
+
+    margin-top:40px;
+
+    font-size:26px;
+
+    font-style:italic;
+
+    color:#FFD166;
+
+}
+
+/* Falling Flowers */
+
+.flower{
+
+    position:absolute;
+
+    top:-40px;
+
+    font-size:22px;
+
+    animation:fall linear forwards;
+
+}
+
+@keyframes fall{
+
+0%{
+
+transform:translateY(-40px) rotate(0deg);
+
+opacity:1;
+
+}
+
+100%{
+
+transform:translateY(110vh) rotate(360deg);
+
+opacity:.8;
+
+}
+
+}

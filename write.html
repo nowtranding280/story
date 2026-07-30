@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Evxy Story Writer</title>
+
+    <link rel="stylesheet" href="write.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Background Animation -->
+    <div class="background"></div>
+
+    <!-- Header -->
+    <header>
+
+        <div class="logo">
+            Evxy Story Writer
+        </div>
+
+        <div class="header-right">
+
+            <select id="themeSelect">
+
+                <option value="midnight">🌌 Midnight Blue</option>
+
+                <option value="sakura">🌸 Sakura Pink</option>
+
+                <option value="forest">🌿 Forest Green</option>
+
+                <option value="coffee">☕ Coffee Brown</option>
+
+            </select>
+
+            <button id="saveBtn">
+                💾 Save Story
+            </button>
+
+        </div>
+
+    </header>
+
+    <!-- Main Layout -->
+
+    <main>
+
+        <!-- Sidebar -->
+
+        <aside class="sidebar">
+
+            <h2>
+                📚 Saved Stories
+            </h2>
+
+            <input
+            type="text"
+            id="searchStory"
+            placeholder="Search story...">
+
+            <div id="storyList">
+
+                <!-- JS will create story cards -->
+
+            </div>
+
+        </aside>
+
+
+
+        <!-- Writing Area -->
+
+        <section class="editorSection">
+
+            <input
+            type="text"
+            id="storyTitle"
+            placeholder="Enter Story Title...">
+
+
+
+            <div class="chapterRow">
+
+                <input
+                type="text"
+                id="chapterTitle"
+                placeholder="Chapter Title">
+
+                <input
+                type="number"
+                id="chapterNumber"
+                placeholder="Chapter No."
+                min="1">
+
+            </div>
+
+
+
+            <textarea
+
+            id="storyContent"
+
+            placeholder="
+
+Once upon a time...
+
+Start writing your imagination here.
+
+Every great story begins with a single sentence.
+
+"
+
+            ></textarea>
+
+
+
+            <div class="bottomBar">
+
+                <div class="stats">
+
+                    <span>
+
+                        Words :
+
+                        <strong id="wordCount">
+
+                            0
+
+                        </strong>
+
+                    </span>
+
+                    <span>
+
+                        Characters :
+
+                        <strong id="charCount">
+
+                            0
+
+                        </strong>
+
+                    </span>
+
+                    <span>
+
+                        Reading :
+
+                        <strong id="readingTime">
+
+                            0 min
+
+                        </strong>
+
+                    </span>
+
+                </div>
+
+
+
+                <div class="editorButtons">
+
+                    <button id="clearBtn">
+
+                        🗑 Clear
+
+                    </button>
+
+                    <button id="downloadBtn">
+
+                        ⬇ Download
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- Preview Window -->
+
+    <section class="previewSection">
+
+        <h2>
+
+            👁 Story Preview
+
+        </h2>
+
+        <div id="previewTitle">
+
+            Story Title
+
+        </div>
+
+        <div id="previewChapter">
+
+            Chapter
+
+        </div>
+
+        <hr>
+
+        <div id="previewContent">
+
+            Your story preview will appear here...
+
+        </div>
+
+    </section>
+
+
+
+    <script src="write.js"></script>
+
+</body>
+
+</html>
