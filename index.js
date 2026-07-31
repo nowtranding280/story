@@ -36,6 +36,6 @@ document.getElementById("enterBtn").addEventListener("click", function(e){
 
     e.preventDefault();
 
-    window.location.href = "file:///r%3A/story/page%202/write.html";
+    window.location.href = "write.html";
 
 });
