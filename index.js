@@ -8,7 +8,7 @@ function createFlower(){
 
     flower.className = "flower";
 
-    const flowers = ["🤣","😂","💀","😕"];
+    const flowers = ["🌸","🌼","🪷","🌺","💐","🌹"];
 
     flower.innerHTML = flowers[Math.floor(Math.random()*flowers.length)];
 
